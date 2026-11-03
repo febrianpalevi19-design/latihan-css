@@ -1,0 +1,161 @@
+/* KEDAI KOPI NUSANTARA - Tema Dusty Rose + Plum + Champagne */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: #f7eef0;
+    color: #392b35;
+    line-height: 1.7;
+}
+#header {
+    background: #482d40;
+    color: #fff8f2;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    box-shadow: 0 4px 14px rgba(50,30,45,.18);
+}
+.logo {
+    margin: 0;
+    color: #edc9b8;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.menu-link {
+    display: inline-block;
+    margin-left: 22px;
+    color: #fff8f2;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color .25s ease, transform .25s ease;
+}
+.menu-link:hover {
+    color: #edc9b8;
+    transform: translateY(-2px);
+}
+.section {
+    max-width: 1000px;
+    margin: 38px auto;
+    padding: 38px 42px;
+    background: #fffafb;
+    border-radius: 16px;
+    box-shadow: 0 7px 24px rgba(65,40,55,.08);
+}
+.judul {
+    margin: 0 0 20px;
+    color: #754d67;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: center;
+}
+.judul::after {
+    content: "";
+    display: block;
+    width: 58px;
+    height: 3px;
+    margin: 12px auto 0;
+    background: #c99583;
+    border-radius: 3px;
+}
+.tombol {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 11px 24px;
+    background: #a86f7d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 999px;
+    transition: background .25s ease, transform .25s ease;
+}
+.tombol:hover {
+    background: #805264;
+    transform: translateY(-2px);
+}
+.kotak {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 31.5%;
+    min-height: 150px;
+    margin: 8px .5%;
+    padding: 22px;
+    background: #f4e6e9;
+    border: 1px solid #e8d2d9;
+    border-radius: 13px;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.kotak:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 20px rgba(65,40,55,.12);
+}
+.kotak h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #754d67;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 21px;
+}
+.spesial {
+    background: #f0dce1;
+    border: 2px solid #c995a5;
+}
+.spesial h3 { color: #623e55; }
+.tabel {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fffafb;
+}
+.tabel th, .tabel td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #eadde1;
+    text-align: left;
+}
+.tabel th {
+    background: #754d67;
+    color: #fff8f2;
+    font-weight: 700;
+    letter-spacing: .4px;
+}
+.tabel tr:nth-child(even) td { background: #f8eff1; }
+.tabel tr:last-child td { border-bottom: none; }
+#footer {
+    margin-top: 50px;
+    padding: 22px 16px;
+    background: #482d40;
+    color: #f7eef0;
+    text-align: center;
+    font-size: 14px;
+}
+#footer p { margin: 0; }
+
+@media (max-width: 700px) {
+    #header {
+        justify-content: center;
+        text-align: center;
+        padding: 20px 5%;
+    }
+    nav { width: 100%; }
+    .menu-link { margin: 5px 9px; }
+    .section {
+        margin: 22px 14px;
+        padding: 26px 20px;
+    }
+    .judul { font-size: 26px; }
+    .kotak {
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    .tabel th, .tabel td {
+        padding: 11px 10px;
+        font-size: 14px;
+    }
+}
